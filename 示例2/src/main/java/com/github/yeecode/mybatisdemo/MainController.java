@@ -16,7 +16,7 @@ public class MainController {
     public Object index() {
         User userParam = new User();
         userParam.setName("alex");
-        List<User> userList = userMapper.queryUserBySchoolName(userParam);
+        List<User> userList = userMapper.queryUserByName(userParam);
         for (User user : userList) {
             System.out.println("name : " + user.getName() + " ;  email : " + user.getEmail());
         }
