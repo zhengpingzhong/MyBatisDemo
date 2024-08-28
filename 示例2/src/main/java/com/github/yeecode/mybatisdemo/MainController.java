@@ -15,7 +15,7 @@ public class MainController {
     @RequestMapping("/")
     public Object index() {
         User userParam = new User();
-        userParam.setSchoolName("Sunny School");
+        userParam.setName("alex");
         List<User> userList = userMapper.queryUserBySchoolName(userParam);
         for (User user : userList) {
             System.out.println("name : " + user.getName() + " ;  email : " + user.getEmail());
